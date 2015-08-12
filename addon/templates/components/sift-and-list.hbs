@@ -1,6 +1,6 @@
 {{#each item in results}}
   {{! the component is being used in the block form, so we yield}}
-  {{#if template.blockParams}}
+  {{#if hasBlockParams}}
     {{yield item}}
   {{! no block so just display the item}}
   {{else}}
