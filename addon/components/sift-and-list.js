@@ -39,6 +39,7 @@ export default Ember.Component.extend({
       sort: sort
     }).items.map(i => list[i.id]);
 
+    this.sendAction('updateResults', results);
     this.set('results', results);
   }.on('willInsertElement').observes('searchInput')
 });

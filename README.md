@@ -27,6 +27,7 @@ ember generate ember-cli-sift-and-list
   sortBy="title"
   list=list
   searchInput=searchInput
+  updateResults="updateResults" {{!-- sends updated results array --}}
   results=results as |result|
 }}
   <li>{{result.title}}</li>
