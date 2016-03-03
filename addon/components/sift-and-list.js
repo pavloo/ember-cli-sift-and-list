@@ -23,7 +23,7 @@ export default Ember.Component.extend({
     return this.get('_fields').map(f => {
       return {
         field: f,
-        direction: 'asc',
+        direction: 'asc'
       };
     });
   }.property('_fields'),
